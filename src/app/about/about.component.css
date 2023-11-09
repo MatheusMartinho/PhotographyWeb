@@ -1,0 +1,112 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbbba3;
+  font-family: Nunito;
+}
+
+/* O container principal que segura a imagem e o texto */
+.main-content {
+  flex: 1; /* Faz com que o container cresça e ocupe o espaço disponível, empurrando o footer para baixo */
+  display: flex;
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  gap: 1em; /* Espaçamento entre a imagem e o texto */
+  margin-bottom: 1em; /* Espaço antes do footer */
+
+}
+
+/* Ajustes para a imagem */
+.imagem {
+  flex: 1; /* Faz a imagem crescer e ocupar espaço disponível */
+  display: flex;
+  justify-content: flex-end; /* Alinha a imagem à direita */
+}
+
+.imagem img {
+  max-width: 100%; /* Garante que a imagem seja responsiva */
+  max-height: 100vh; /* Impede que a imagem seja maior que a altura da viewport */
+  object-fit: contain; /* Mantém a proporção da imagem sem cortar */
+  margin-top: 170px;
+  padding-right: 20px;
+
+}
+
+/* Ajustes para o texto */
+.sobre {
+  flex: 2; /* O texto pode ocupar até duas vezes o espaço da imagem */
+  padding: auto;
+  width: 40%;
+  margin: auto;
+  font-size: 1.5em;
+  margin-left: 7.5em;
+  background-color: #fff;
+  border: 1px solid red;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  font-size: 1.5em; /* Tamanho da fonte */
+  color: black; /* Cor do texto */
+  background: rgba(255, 255, 255, 0.1); /* Fundo branco com transparência */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque para Safari */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.sobre p{
+  padding: 110px;
+  padding-bottom: 3em;
+}
+
+.botao-contacto{
+  border: 1px solid red;
+  text-align: center;
+  width: 14%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  border:none;
+}
+
+.botao-contacto a{
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border:none;
+  cursor: pointer;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.botao-contacto a:hover{
+  color: white;
+  background: #0A0A08;
+  box-shadow: 0 0 10px #0A0A08, 0 0 40px #0A0A08, 0 0 80px #0A0A08;
+  transition: 0.5s;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Empilha imagem e texto verticalmente em telas menores */
+  }
+
+  .imagem {
+    justify-content: center; /* Centraliza a imagem */
+  }
+
+  .imagem img {
+    max-width: 80%; /* Faz a imagem ser um pouco menor em dispositivos móveis */
+    max-height: unset; /* Permite que a altura da imagem se ajuste conforme necessário */
+  }
+
+  .sobre {
+    order: -1; /* Coloca o texto acima da imagem em telas menores */
+  }
+}

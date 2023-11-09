@@ -1,0 +1,89 @@
+/* Apply a global font and remove default margins */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbbba3;
+  font-family: Nunito;
+}
+
+/* Style the form */
+form {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Style the form fields */
+input[type=text],
+input[type=email],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Style the Submit button */
+input[type=submit] {
+  background: #0A0A08;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Change Submit button color on hover */
+input[type=submit]:hover {
+  background: #333;
+}
+
+/* Adjust label and input alignment */
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+/* Adjust textarea height */
+textarea {
+  height: 120px; /* Adjust height as per your preference */
+}
+
+/* Ensure that labels and inputs have matching font size */
+form label,
+form input,
+form textarea {
+  font-size: 0.9em;
+}
+
+.container-text{
+  border: 1px solid red;
+  margin-right: 5em;
+  padding: 5.5em;
+  border-radius: 20px;
+  color: black; /* Cor do texto */
+  background: rgba(255, 255, 255, 0.1); /* Fundo branco com transparência */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque para Safari */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-size: 1.2em;
+}

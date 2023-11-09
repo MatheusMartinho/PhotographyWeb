@@ -1,0 +1,51 @@
+body{
+  background-color: #fbbba3;
+}
+.lens{
+  display:flex;
+  justify-content: flex-end;
+}
+
+img{
+  padding-top:10em;
+  padding-right: 10em;
+  width: 500px; /* Set the width of the image */
+  height: auto; /* The height will scale proportionally */
+}
+
+.para{
+  display:flex;
+  text-align:left;
+  justify-content:center;
+  margin-top: 12em;
+  padding-left: 25em;
+}
+
+.para p{
+  font-size: 5em;
+  font-family: Nunito;
+}
+
+.redes-sociais{
+  text-align: right;
+  position: absolute;
+  font-size: 0;
+  top: 680px; /* Alinhe ao topo do contêiner */
+  right: 1300px; /* Alinhe à direita do contêiner */
+}
+
+.redes-sociais img{
+  width: 40px; /* Largura da imagem */
+  height: 40px; /* Altura da imagem */
+  vertical-align: middle; /* Isso ajuda a remover o espaço extra abaixo das imagens inline */
+  display: block;
+}
+
+.redes-sociais a {
+  display: inline-block; /* Permite que o elemento 'a' seja tratado como um bloco inline */
+  padding: 0; /* Garante que não haja preenchimento afetando o tamanho */
+  margin-right: 30px; /* Espaçamento à direita do link */
+  line-height: 0; /* Remove qualquer altura de linha que possa afetar o tamanho */
+  box-sizing: border-box; /* Inclui preenchimento e bordas no tamanho total se eles estiverem definidos */
+  text-decoration: none; /* Remove o sublinhado do link */
+}

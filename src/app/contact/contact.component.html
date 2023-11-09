@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Form</title>
+  </head>
+  <body>
+
+    <div class="container-text">
+      <h3>Fale Conosco</h3>
+      <p><strong>Email:</strong> matmouramartinho@gmail.com</p>
+      <p><strong>WhatsApp:</strong> (+1) 236 866-5846</p>
+      <p><strong>Endereço:</strong> Estr. São Francisco, 1800, Taboão da Serra - SP
+        , Brasil</p>
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+      <label for="">Name:</label>
+      <input type="text" formControlName="to_name" placeholder="Your Name" />
+      <label for="">Email:</label>
+      <input
+        type="email"
+        formControlName="from_name"
+        placeholder="Your Email"
+      />
+      <label for="">Message:</label>
+      <textarea formControlName="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

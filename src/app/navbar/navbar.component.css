@@ -1,0 +1,67 @@
+/* Estilo geral da barra de navegação */
+.navbar {
+  padding: 0.5rem 1rem; /* Almofada interna */
+  display: flex; /* Flexbox para alinhamento */
+  justify-content: space-between; /* Espaçamento entre a marca e os itens de navegação */
+  align-items: center; /* Centraliza os itens verticalmente */
+  height: 5em;
+  background-color: #fbbba3;
+}
+
+
+/* Estilo para o nome da marca/empresa */
+.navbar-brand {
+  font-size: 1.5rem; /* Tamanho da fonte maior */
+  font-weight: bold; /* Fonte mais grossa */
+  color: #ecf0f1; /* Cor clara para o texto */
+  text-decoration: none; /* Nenhuma sublinhado no texto */
+  transition: color 0.3s; /* Transição suave para o hover */
+  color: black;
+}
+
+img {
+  max-width: 300px; /* Ajusta a largura máxima do logo */
+  max-height: 80px; /* Ajusta a altura máxima do logo */
+  position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
+  top: 10px; /* Espaçamento do topo do contêiner */
+  left: 10px; /* Espaçamento da esquerda do contêiner */
+  padding-left: 10em;
+}
+
+.navbar-brand:hover {
+  color: #3498db; /* Mudança de cor quando o mouse passa por cima */
+}
+
+/* Estilo para a lista de navegação */
+.navbar-nav {
+  list-style: none; /* Remove estilos de lista */
+  display: flex; /* Flexbox para alinhamento horizontal */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  padding-right: 10em;
+}
+
+/* Estilo para cada item de navegação */
+.nav-item {
+  margin: 0 0.5rem; /* Margem entre os itens */
+
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+  color: black; /* Cor clara para o texto */
+  text-decoration: none; /* Nenhuma sublinhado no texto */
+  font-weight: 500; /* Um pouco mais de peso na fonte */
+  transition: color 0.3s; /* Transição suave para o hover */
+
+}
+
+.nav-link:hover {
+  color: #3498db; /* Mudança de cor quando o mouse passa por cima */
+}
+
+/* Estilo para o link ativo */
+.active {
+  color: #3498db; /* Destaca o link ativo com uma cor diferente */
+  border-bottom: 2px solid #3498db; /* Sublinha o link ativo para melhor destaque */
+}
