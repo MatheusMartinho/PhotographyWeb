@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+
+.gallery-item {
+  padding: 5px;
+}
+
+.gallery-item img {
+  width: 100%; /* Você pode ajustar isso conforme necessário */
+  max-width: 300px; /* Você pode ajustar isso conforme necessário */
+  margin-bottom: 10px;
+  border-radius: 5px; /* Bordas arredondadas para as imagens */
+  transition: transform 0.2s ease; /* Transição suave para o efeito de zoom */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  cursor: pointer;
+}
