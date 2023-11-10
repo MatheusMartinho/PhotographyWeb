@@ -1,11 +1,12 @@
 /* Apply a global font and remove default margins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #5C4033;
-  font-family: Nunito;
 }
 
 /* Style the form */
@@ -87,3 +88,5 @@ form textarea {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   font-size: 1.2em;
 }
+
+

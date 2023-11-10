@@ -1,4 +1,5 @@
-/* Estilo geral da barra de navegação */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .navbar {
   padding: 0.5rem 1rem; /* Almofada interna */
   display: flex; /* Flexbox para alinhamento */
@@ -6,7 +7,7 @@
   align-items: center; /* Centraliza os itens verticalmente */
   height: 5em;
   background-color: #5C4033;
-  font-family: Roboto;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
@@ -72,15 +73,15 @@ img {
 #btn-contacto{
   padding: 7px;
   border-radius: 4px;
-  background: #110ACD;
+  background: #aa6f73;
   width: 121px;
   height: 42px;
   color: #FFF;
-  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-family: "Poppins", sans-serif;
 }
 #btn-contacto:hover{
   color: black;

@@ -13,6 +13,21 @@ img{
   height: auto; /* The height will scale proportionally */
 }
 
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(10deg); }
+  30% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  70% { transform: rotate(-10deg); }
+  90% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+img:hover{
+  animation: swing 1s ease-in-out infinite;
+  transform-origin: top center;
+}
+
 .para{
   display:flex;
   text-align:left;

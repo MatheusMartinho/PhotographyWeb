@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ProgrammingComponent } from './programming/programming.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProgrammingComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ app-footer {
 
 .gallery-item {
   padding: 5px;
-  width: 450px; /* Largura fixa para cada item da galeria */
+  width: 420px; /* Largura fixa para cada item da galeria */
   height: 450px; /* Altura fixa para cada item da galeria */
   overflow: hidden; /* Esconde qualquer parte da imagem que exceda o tamanho do item */
   display: flex; /* Permite usar flexbox para centralizar a imagem */
@@ -29,11 +29,14 @@ app-footer {
 }
 
 .gallery-item img {
-  width: 100%; /* Você pode ajustar isso conforme necessário */
-  max-width: 300px; /* Você pode ajustar isso conforme necessário */
   margin-bottom: 10px;
+  height: 100%; /* Assegura que a imagem preencha a altura do container */
+  width: 100%; /* Você pode ajustar isso conforme necessário */
+  max-width: 400px; /* Você pode ajustar isso conforme necessário */
+  max-height: 400px;
+  object-fit: cover; /* A imagem cobrirá todo o espaço, cortando as partes que não cabem */
   border-radius: 5px; /* Bordas arredondadas para as imagens */
-  transition: transform 0.2s ease; /* Transição suave para o efeito de zoom */
+  transition: transform 0.2s ease;
 }
 
 .gallery-item img:hover {
@@ -93,7 +96,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-  margin: 0 10px; /* Espaço entre os botões */
+  margin: 0 40px; /* Espaço entre os botões */
 }
 
 button:hover, button:focus {

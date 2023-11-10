@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
   background-color: #5C4033;
-  font-family: Nunito;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* O container principal que segura a imagem e o texto */
@@ -28,19 +30,15 @@ body {
   object-fit: contain; /* Mantém a proporção da imagem sem cortar */
   margin-top: 174px;
   padding-right: 20px;
-
 }
 
 /* Ajustes para o texto */
 .sobre {
   flex: 2; /* O texto pode ocupar até duas vezes o espaço da imagem */
-  padding: auto;
   width: 40%;
-  margin: auto;
   font-size: 1.5em;
   margin-left: 7.5em;
   background-color: #fff;
-  border: 1px solid red;
   box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
   font-size: 1.5em; /* Tamanho da fonte */
   color: black; /* Cor do texto */
@@ -84,8 +82,8 @@ body {
 
 .botao-contacto a:hover{
   color: white;
-  background: #110ACD;
-  box-shadow: 0 0 10px #110ACD, 0 0 40px #110ACD, 0 0 80px #110ACD;
+  background: #aa6f73;
+  box-shadow: 0 0 10px #aa6f73, 0 0 40px #aa6f73, 0 0 80px #aa6f73;
   transition: 0.5s;
 }
 
@@ -93,7 +91,7 @@ body {
   width: 100px;
   height: 100px;
   position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
-  top: 430px; /* Espaçamento do topo do contêiner */
+  top: 530px; /* Espaçamento do topo do contêiner */
   left: 100px; /* Espaçamento da esquerda do contêiner */
   border-radius: 5px;
 }
@@ -101,7 +99,7 @@ body {
   width: 100px;
   height: 100px;
   position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
-  top: 430px; /* Espaçamento do topo do contêiner */
+  top: 530px; /* Espaçamento do topo do contêiner */
   left: 250px; /* Espaçamento da esquerda do contêiner */
   border-radius: 5px;
 }
@@ -130,6 +128,7 @@ body {
   .imagem img {
     max-width: 80%; /* Faz a imagem ser um pouco menor em dispositivos móveis */
     max-height: unset; /* Permite que a altura da imagem se ajuste conforme necessário */
+
   }
 
   .sobre {
