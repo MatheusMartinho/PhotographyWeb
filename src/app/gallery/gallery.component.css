@@ -3,6 +3,12 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
+  background-color: #5C4033;
+  height: 404%;
+}
+
+app-footer {
+  display: none;
 }
 
 .gallery {
@@ -14,6 +20,12 @@ body {
 
 .gallery-item {
   padding: 5px;
+  width: 450px; /* Largura fixa para cada item da galeria */
+  height: 450px; /* Altura fixa para cada item da galeria */
+  overflow: hidden; /* Esconde qualquer parte da imagem que exceda o tamanho do item */
+  display: flex; /* Permite usar flexbox para centralizar a imagem */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
 }
 
 .gallery-item img {
@@ -27,4 +39,77 @@ body {
 .gallery-item img:hover {
   transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
   cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que o lightbox fique acima de outros conteúdos */
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.lightbox button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.lightbox button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Posicionar o botão 'Anterior' à esquerda e o 'Próxima' à direita */
+.lightbox button:nth-child(2) {
+  left: 10px;
+}
+
+.lightbox button:nth-child(3) {
+  right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #007bff; /* Cor azul estilo bootstrap */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  margin: 0 10px; /* Espaço entre os botões */
+}
+
+button:hover, button:focus {
+  background-color: #0056b3; /* Um azul um pouco mais escuro ao passar o mouse ou focar */
+  transform: translateY(-2px); /* Levanta ligeiramente o botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito 3D */
+}
+
+button:active {
+  background-color: #003865; /* Azul ainda mais escuro ao clicar */
+  transform: translateY(1px); /* Desce ligeiramente o botão */
+  box-shadow: none; /* Remove a sombra para dar sensação de pressionado */
+}
+
+/* Se os botões estiverem desabilitados, aplique um estilo diferente */
+button:disabled {
+  background-color: #cccccc; /* Cinza para indicar que não está disponível */
+  cursor: not-allowed; /* Cursor de proibido */
 }

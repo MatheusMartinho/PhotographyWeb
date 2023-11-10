@@ -2,7 +2,7 @@ body {
   font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #fbbba3;
+  background-color: #5C4033;
   font-family: Nunito;
 }
 
@@ -13,7 +13,6 @@ body {
   align-items: flex-start; /* Alinha o conteúdo ao topo */
   gap: 1em; /* Espaçamento entre a imagem e o texto */
   margin-bottom: 1em; /* Espaço antes do footer */
-
 }
 
 /* Ajustes para a imagem */
@@ -27,7 +26,7 @@ body {
   max-width: 100%; /* Garante que a imagem seja responsiva */
   max-height: 100vh; /* Impede que a imagem seja maior que a altura da viewport */
   object-fit: contain; /* Mantém a proporção da imagem sem cortar */
-  margin-top: 170px;
+  margin-top: 174px;
   padding-right: 20px;
 
 }
@@ -59,7 +58,6 @@ body {
 }
 
 .botao-contacto{
-  border: 1px solid red;
   text-align: center;
   width: 14%;
   margin: auto;
@@ -77,19 +75,47 @@ body {
   background: white;
   border:none;
   cursor: pointer;
-  margin-bottom: 2em;
-  border-radius: 20px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  border-radius: 4px;
   display: inline-block;
+
 }
 
 .botao-contacto a:hover{
   color: white;
-  background: #0A0A08;
-  box-shadow: 0 0 10px #0A0A08, 0 0 40px #0A0A08, 0 0 80px #0A0A08;
+  background: #110ACD;
+  box-shadow: 0 0 10px #110ACD, 0 0 40px #110ACD, 0 0 80px #110ACD;
   transition: 0.5s;
 }
 
+.lightroom-logo{
+  width: 100px;
+  height: 100px;
+  position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
+  top: 430px; /* Espaçamento do topo do contêiner */
+  left: 100px; /* Espaçamento da esquerda do contêiner */
+  border-radius: 5px;
+}
+.angular-logo{
+  width: 100px;
+  height: 100px;
+  position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
+  top: 430px; /* Espaçamento do topo do contêiner */
+  left: 250px; /* Espaçamento da esquerda do contêiner */
+  border-radius: 5px;
+}
 
+.lightroom-logo:hover{
+  background: #1b9bfb;
+  box-shadow: 0 0 10px #1b9bfb, 0 0 40px #1b9bfb, 0 0 80px #1b9bfb;
+  transition: 0.5s;
+}
+.angular-logo:hover{
+  background: #c4042c;
+  box-shadow: 0 0 10px #dc0433, 0 0 40px #dc0433, 0 0 80px #dc0433;
+  transition: 0.5s;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {

@@ -5,7 +5,9 @@
   justify-content: space-between; /* Espaçamento entre a marca e os itens de navegação */
   align-items: center; /* Centraliza os itens verticalmente */
   height: 5em;
-  background-color: #fbbba3;
+  background-color: #5C4033;
+  font-family: Roboto;
+  font-size: 18px;
 }
 
 
@@ -26,6 +28,7 @@ img {
   top: 10px; /* Espaçamento do topo do contêiner */
   left: 10px; /* Espaçamento da esquerda do contêiner */
   padding-left: 10em;
+  padding-top: 14px;
 }
 
 .navbar-brand:hover {
@@ -57,11 +60,28 @@ img {
 }
 
 .nav-link:hover {
-  color: #3498db; /* Mudança de cor quando o mouse passa por cima */
+  color: #fff; /* Mudança de cor quando o mouse passa por cima */
 }
 
 /* Estilo para o link ativo */
 .active {
-  color: #3498db; /* Destaca o link ativo com uma cor diferente */
-  border-bottom: 2px solid #3498db; /* Sublinha o link ativo para melhor destaque */
+  color: #fff; /* Destaca o link ativo com uma cor diferente */
+  border-bottom: 2px solid #fff; /* Sublinha o link ativo para melhor destaque */
+}
+
+#btn-contacto{
+  padding: 7px;
+  border-radius: 4px;
+  background: #110ACD;
+  width: 121px;
+  height: 42px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#btn-contacto:hover{
+  color: black;
 }

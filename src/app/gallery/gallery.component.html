@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galeria de Fotos</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Fotos</title>
+  </head>
+  <body>
+    <!-- gallery.component.html -->
+    <div class="gallery">
+      <div class="gallery-item" *ngFor="let image of images; let i = index">
+        <img [src]="image.src" [alt]="image.alt" (click)="openLightbox(i)" />
+      </div>
+    </div>
 
-<div class="gallery">
-  <div class="gallery-item">
-    <img src="assets/images/background-about.png" alt="Descrição da imagem 1">
-  </div>
-  <div class="gallery-item">
-    <img src="assets/images/Befok.png" alt="Descrição da imagem 2">
-  </div>
-  <div class="gallery-item">
-    <img src="assets/images/lens.png" alt="Descrição da imagem 2">
-  </div>
-  <div class="gallery-item">
-    <img src="assets/images/logoo.png" alt="Descrição da imagem 2">
-  </div>
-  <div class="gallery-item">
-    <img src="assets/images/matheus.png" alt="Descrição da imagem 2">
-  </div>
-  <!-- Adicione mais itens de galeria conforme necessário -->
-</div>
-
-</body>
+    <div class="lightbox" *ngIf="lightboxOpen" (click)="closeLightbox()">
+      <img
+        [src]="images[currentIndex].src"
+        (click)="$event.stopPropagation()"
+      />
+      <button (click)="moveInLightbox(-1); $event.stopPropagation()">
+        ◄
+      </button>
+      <button (click)="moveInLightbox(1); $event.stopPropagation()">
+        ►
+      </button>
+    </div>
+    <app-footer *ngIf="showFooter"></app-footer>
+  </body>
 </html>
