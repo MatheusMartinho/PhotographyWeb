@@ -25,5 +25,31 @@ export class ProgrammingComponent {
     { image: '/assets/images/programmingLogo/ram.png', title: 'Memoria Ram', description: '16ram DDR4' },
     // ... additional setup items ...
   ];
+
+  showPreview = false;
+
+  downloadResume(): void {
+    window.open('path-to-your-resume.pdf', '_blank');
+  }
+
+  previewResume(): void {
+    this.showPreview = true;
+  }
+
+  closePreview(): void {
+    this.showPreview = false;
+  }
+
+  count = 0;
+
+  increment() {
+    this.count++;
+  }
+
+  decrement() {
+    if (this.count > 0) {
+      this.count--;
+    }
+  }
 }
 

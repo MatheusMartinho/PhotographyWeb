@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProgrammingComponent } from './programming/programming.component';
+import { SetupComponent } from './setup/setup.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProgrammingComponent } from './programming/programming.component';
     ContactComponent,
     FooterComponent,
     GalleryComponent,
-    ProgrammingComponent
+    ProgrammingComponent,
+    SetupComponent
   ],
   imports: [
     BrowserModule,
