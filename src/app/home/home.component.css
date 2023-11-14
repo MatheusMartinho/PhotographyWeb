@@ -1,18 +1,21 @@
-body{
+body {
   background-color: #5C4033;
 }
-.lens{
-  display:flex;
+
+.lens {
+  display: flex;
   justify-content: flex-end;
 }
 
-img{
-  padding-top:10em;
-  padding-right: 10em;
-  width: 500px; /* Set the width of the image */
-  height: auto; /* The height will scale proportionally */
+img {
+  padding-top: 5vw;
+  padding-right: 5vw;
+  width: 50vw;
+  max-width: 500px;
+  height: auto;
 }
 
+/* Keyframes for swing animation remain the same */
 @keyframes swing {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(10deg); }
@@ -23,48 +26,63 @@ img{
   100% { transform: rotate(0deg); }
 }
 
-img:hover{
+img:hover {
   animation: swing 1s ease-in-out infinite;
   transform-origin: top center;
 }
 
-.para{
-  display:flex;
-  text-align:left;
-  justify-content:center;
-  margin-top: 12em;
-  padding-left: 25em;
+.para {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-top: 6vw;
+  padding-left: 10vw;
 }
 
-.para p{
-  font-size: 5em;
+.para p {
+  font-size: 2vw;
   font-family: Nunito;
+  max-font-size: 5em; /* Ensures the font size doesn't get too large */
 }
 
-.redes-sociais{
+.redes-sociais {
   text-align: right;
   position: absolute;
   font-size: 0;
-  top: 680px; /* Alinhe ao topo do contêiner */
-  right: 1300px; /* Alinhe à direita do contêiner */
+  top: 5%;
+  right: 5%;
 }
 
-.redes-sociais img{
-  width: 40px; /* Largura da imagem */
-  height: 40px; /* Altura da imagem */
-  vertical-align: middle; /* Isso ajuda a remover o espaço extra abaixo das imagens inline */
-  display: block;
+.redes-sociais img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 
 .redes-sociais a {
-  display: inline-block; /* Permite que o elemento 'a' seja tratado como um bloco inline */
-  padding: 0; /* Garante que não haja preenchimento afetando o tamanho */
-  margin-right: 30px; /* Espaçamento à direita do link */
-  line-height: 0; /* Remove qualquer altura de linha que possa afetar o tamanho */
-  box-sizing: border-box; /* Inclui preenchimento e bordas no tamanho total se eles estiverem definidos */
-  text-decoration: none; /* Remove o sublinhado do link */
+  /* Existing styles */
 }
 
-.redes-sociais a:hover{
-  transform: scale(1.10);
+@media (max-width: 1440px) {
+  .para p {
+    font-size: 4vw;
+  }
+
+  img {
+    padding-top: 3vw;
+    padding-right: 3vw;
+  }
+
+  .para {
+    padding-left: 5vw;
+  }
+
+  .redes-sociais {
+    top: 45%;
+    right: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for smaller screens */
 }

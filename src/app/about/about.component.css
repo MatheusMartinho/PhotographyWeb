@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   background-color: #5C4033;
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
 }
 
 /* O container principal que segura a imagem e o texto */
@@ -135,3 +136,44 @@ body {
     order: -1; /* Coloca o texto acima da imagem em telas menores */
   }
 }
+
+/* Existing styles... */
+
+/* Responsividade para telas maiores que 1440px */
+@media (min-width: 1440px) {
+  .imagem img {
+
+    margin-top: 40.10%; /* Ajuste proporcional */
+    padding-right: 2%; /* Ajuste proporcional */
+  }
+
+  .sobre {
+    width: 35%; /* Ajustar largura para telas maiores */
+    font-size: 1.2em; /* Ajustar tamanho da fonte */
+    margin-left: 5em; /* Ajustar margem esquerda */
+    padding: 2em; /* Ajustar padding */
+  }
+
+  .sobre p {
+    padding: 2em; /* Ajustar padding */
+  }
+
+  .botao-contacto {
+    width: 14%; /* Ajustar largura do botão */
+    margin-top: 5%;
+  }
+
+  .lightroom-logo, .angular-logo {
+    width: 90px; /* Aumentar tamanho dos logos */
+    height: 90px; /* Aumentar tamanho dos logos */
+    top: 60%;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
+
+/* Responsividade para telas menores que 768px (mantém os estilos existentes) */
+@media (max-width: 768px) {
+  /* Estilos existentes... */
+}
+
