@@ -1,21 +1,38 @@
-body {
-  background-color: #5C4033;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  background-color: #fffff2;
+  font-family: 'Nunito', sans-serif;
+
+}
+.lens{
+  display:flex;
+  padding-top: 15vh;
 }
 
-.lens {
-  display: flex;
-  justify-content: flex-end;
+
+.circle-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-image: url('/assets/images/matheus.png');
+  background-size: 150%; /* Increase the size of the image */
+  background-position: center;
+  animation: rotateCircle 10s linear infinite;
+  border: 2px solid black;
+  margin-top: 1vh;
+  margin-left: 10vh;
 }
 
-img {
-  padding-top: 5vw;
-  padding-right: 5vw;
-  width: 50vw;
-  max-width: 500px;
-  height: auto;
+
+@keyframes rotateCircle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/* Keyframes for swing animation remain the same */
+
+
 @keyframes swing {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(10deg); }
@@ -26,41 +43,44 @@ img {
   100% { transform: rotate(0deg); }
 }
 
-img:hover {
-  animation: swing 1s ease-in-out infinite;
-  transform-origin: top center;
+.swing-link:hover{
+  display: inline-block;
+  animation: swing 1s ease-in-out;
 }
 
-.para {
+.para{
+  display:flex;
+  justify-content:center;
+  text-align:left;
+  flex-direction: column;
+  padding-left: 25em;
+}
+
+.para p{
+  font-size: 5em;
+  font-family: 'Nunito', sans-serif;
+  margin: 10px;
+}
+
+.para .bigger{
+  font-size:4em;
+  width: 100%;
+}
+.para .smaller{
+  font-size: 1em;
+}
+
+.dev-links{
   display: flex;
-  text-align: left;
-  justify-content: center;
-  margin-top: 6vw;
-  padding-left: 10vw;
+  justify-content:space-between;
+  width: 12%;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.para p {
-  font-size: 2vw;
-  font-family: Nunito;
-  max-font-size: 5em; /* Ensures the font size doesn't get too large */
-}
-
-.redes-sociais {
-  text-align: right;
-  position: absolute;
-  font-size: 0;
-  top: 5%;
-  right: 5%;
-}
-
-.redes-sociais img {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-}
-
-.redes-sociais a {
-  /* Existing styles */
+.dev-links a{
+  color: black;
+  font-size: 2em;
 }
 
 @media (max-width: 1440px) {
@@ -76,13 +96,4 @@ img:hover {
   .para {
     padding-left: 5vw;
   }
-
-  .redes-sociais {
-    top: 45%;
-    right: 65%;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Further adjustments for smaller screens */
 }
