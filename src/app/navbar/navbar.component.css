@@ -7,6 +7,7 @@
   background-color: 	#fffff2;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  padding-bottom:15px;
 }
 
 .container{
@@ -15,9 +16,6 @@
   width: 50%;
   margin: auto;
 }
-
-.container
-
 
 /* Estilo para o nome da marca/empresa */
 .navbar-brand {
@@ -69,7 +67,7 @@ img {
 }
 
 .nav-link:hover {
-  color: #fff; /* Mudança de cor quando o mouse passa por cima */
+  color: rgb(251, 2, 128); /* Mudança de cor quando o mouse passa por cima */
 }
 
 /* Estilo para o link ativo */
@@ -81,7 +79,8 @@ img {
 #btn-contacto{
   padding: 7px;
   border-radius: 4px;
-  background: #aa6f73;
+  background-color: rgb(251, 2, 128);
+  background-image: linear-gradient(326deg, #a4508b 0%, rgb(254, 0, 242) 74%);
   width: 121px;
   height: 42px;
   color: #FFF;
