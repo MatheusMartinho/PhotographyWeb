@@ -4,33 +4,58 @@ body{
   font-family: 'Nunito', sans-serif;
 
 }
-.lens{
+.container{
   display:flex;
+  justify-content: center;
   padding-top: 15vh;
+  flex-direction: column;
+  margin-left: 155px;
 }
 
+.wrap{
+  display:flex;
+  flex: row;
+  justify-content: center;
+}
 
+.paragraph .bigger i{
+  font-size: 40px;
+}
 .circle-container {
-  width: 250px;
-  height: 250px;
+  width: 550px;
+  height: 450px;
   border-radius: 50%;
-  overflow: hidden;
   position: relative;
-  background-image: url('/assets/images/matheus.png');
   background-size: 150%; /* Increase the size of the image */
   background-position: center;
-  animation: rotateCircle 10s linear infinite;
-  border: 2px solid black;
   margin-top: 1vh;
   margin-left: 10vh;
+  z-index: 10;
+  border: 1px solid blue;
 }
 
-
-@keyframes rotateCircle {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.conatiner-2{
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
+.conatiner-2 svg{
+  width: 100%;
+  overflow: visible;
+  margin-left: 100px;
+}
+.imagem-matheus{
+  width: 45vh; /* ou um valor específico em pixels */
+  height: 45vh; /* mesmo valor que a largura para manter a proporção */
+  position: relative;
+  top: -110px;
+  left: -300px;
+  z-index: 10;
+  display:flex;
+  border-radius: 20%;
+  object-fit: cover; /* Mantém a proporção e cobre o espaço */
+}
 
 
 @keyframes swing {
@@ -48,25 +73,24 @@ body{
   animation: swing 1s ease-in-out;
 }
 
-.para{
+.paragraph{
   display:flex;
   justify-content:center;
   text-align:left;
   flex-direction: column;
-  padding-left: 25em;
 }
 
-.para p{
+.paragraph p{
   font-size: 5em;
   font-family: 'Nunito', sans-serif;
   margin: 10px;
 }
 
-.para .bigger{
+.paragraph .bigger{
   font-size:4em;
   width: 100%;
 }
-.para .smaller{
+.paragraph .smaller{
   font-size: 1em;
 }
 
@@ -83,8 +107,31 @@ body{
   font-size: 2em;
 }
 
+.tech-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 59%;
+}
+
+.tech-container p{
+  padding-top: 0.5em;
+}
+
+.skill-set{
+  border-radius: 5px; /* Optional: for rounded corners */
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  display:flex;
+  justify-content: center;
+  padding-top: 0.5em;
+}
+
+
 @media (max-width: 1440px) {
-  .para p {
+  .paragraph p {
     font-size: 4vw;
   }
 
@@ -93,7 +140,51 @@ body{
     padding-right: 3vw;
   }
 
-  .para {
+  .paragraph {
     padding-left: 5vw;
   }
+}
+
+
+@media (max-width: 1440px) {
+  /* Ajustes para elementos que precisam ser redimensionados ou reorganizados */
+
+  .container {
+    margin-left: auto; /* Centraliza o container */
+    padding-top: 10vh;
+  }
+
+  .wrap {
+    flex-direction: column; /* Organiza os elementos em coluna */
+  }
+
+  .circle-container {
+    width: 400px; /* Reduz o tamanho */
+    height: 400px; /* Mantém a proporção */
+  }
+
+  .conatiner-2 {
+    width: 50%; /* Aumenta a largura */
+  }
+
+  .imagem-matheus {
+    width: 35vh; /* Reduz o tamanho */
+    height: 35vh; /* Mantém a proporção */
+    top: -80px; /* Ajusta a posição */
+    left: -200px; /* Ajusta a posição */
+  }
+
+  .paragraph p {
+    font-size: 3em; /* Reduz o tamanho da fonte */
+  }
+
+  .dev-links {
+    width: 20%; /* Ajusta a largura */
+  }
+
+  .tech-container {
+    width: 70%; /* Aumenta a largura */
+  }
+
+  /* Adicione mais ajustes conforme necessário */
 }
