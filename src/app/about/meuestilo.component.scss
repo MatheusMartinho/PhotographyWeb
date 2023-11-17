@@ -1,0 +1,69 @@
+$font-family_1: "Poppins", sans-serif;
+$background-color_1: #fffff2;
+
+@keyframes spin {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+body {
+	background-color: $background-color_1;
+	display: flex;
+	flex-direction: row;
+	font-family: $font-family_1;
+}
+.main-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 50vh;
+	margin-right: 5vh;
+}
+.sobre-tema {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 20px;
+}
+.ball {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	animation: spin 5s linear infinite;
+	left: 33vh;
+	top: -7vh;
+	background-color: $background-color_1;
+}
+.text-color {
+	fill: rgb(251, 2, 128);
+}
+svg {
+	width: 100%;
+	height: 100%;
+}
+.img {
+	display: flex;
+	justify-content: flex-end;
+	width: 40%;
+	margin-right: 50vh;
+	height: 61.6%;
+	padding-top: 7.9vh;
+}
+img {
+	border-radius: 5%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}

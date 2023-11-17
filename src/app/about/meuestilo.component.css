@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* O container principal que segura a imagem e o texto */
+/* Ajustes para a imagem */
+/* Ajustes para o texto */
+/* Responsividade */
+/* Existing styles... */
+/* Responsividade para telas maiores que 1440px */
+/* Responsividade para telas menores que 768px (mantém os estilos existentes) */
+/* Estilos existentes... */
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  font-family: "Nunito", sans-serif;
+  height: 100vh; }
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1em; }
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; }
+  .imagem img {
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: contain;
+    margin-top: 174px;
+    padding-right: 20px; }
+
+.sobre {
+  flex: 2;
+  width: 40%;
+  font-size: 1.5em;
+  margin-left: 7.5em;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .sobre p {
+    padding: 110px;
+    padding-bottom: 3em; }
+
+.botao-contacto {
+  text-align: center;
+  width: 14%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  border: none; }
+  .botao-contacto a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    border-radius: 4px;
+    display: inline-block; }
+    .botao-contacto a:hover {
+      color: white;
+      background: #aa6f73;
+      box-shadow: 0 0 10px #aa6f73, 0 0 40px #aa6f73, 0 0 80px #aa6f73;
+      transition: 0.5s; }
+
+.lightroom-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 530px;
+  left: 100px;
+  border-radius: 5px; }
+  .lightroom-logo:hover {
+    background: #1b9bfb;
+    box-shadow: 0 0 10px #1b9bfb, 0 0 40px #1b9bfb, 0 0 80px #1b9bfb;
+    transition: 0.5s; }
+
+.angular-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 530px;
+  left: 250px;
+  border-radius: 5px; }
+  .angular-logo:hover {
+    background: #c4042c;
+    box-shadow: 0 0 10px #dc0433, 0 0 40px #dc0433, 0 0 80px #dc0433;
+    transition: 0.5s; }
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; }
+  .imagem {
+    justify-content: center; }
+    .imagem img {
+      max-width: 80%;
+      max-height: unset; }
+  .sobre {
+    order: -1; } }
+
+@media (min-width: 1440px) {
+  .imagem img {
+    margin-top: 40.10%;
+    padding-right: 2%; }
+  .sobre {
+    width: 35%;
+    font-size: 1.2em;
+    margin-left: 5em;
+    padding: 2em; }
+    .sobre p {
+      padding: 2em; }
+  .botao-contacto {
+    width: 14%;
+    margin-top: 5%; }
+  .lightroom-logo {
+    width: 90px;
+    height: 90px;
+    top: 60%;
+    margin-left: 4%;
+    margin-top: 2%; }
+  .angular-logo {
+    width: 90px;
+    height: 90px;
+    top: 60%;
+    margin-left: 4%;
+    margin-top: 2%; } }

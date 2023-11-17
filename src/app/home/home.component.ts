@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   paragraph = 'Front-End Angular\n Developer &\n Photographer';
-  description = "Hi, I'm Matheus Martinho. A passionate Front-end Angular Developer &\n photographer. Based in Sao Paulo, Brazil";
+  description = "Hi, I'm Matheus Martinho. A passionate Front-end Angular Developer &\n photographer. Based in São Paulo, Brazil";
   linkedinUrl = 'https://br.linkedin.com/in/matheus-moura-martinho-8630091b3';
   githubUrl = 'https://github.com/MatheusMartinho';
 

@@ -2,7 +2,7 @@
 body{
   background-color: #fffff2;
   font-family: 'Nunito', sans-serif;
-
+  height: 100vh;
 }
 .container{
   display:flex;
@@ -112,7 +112,8 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 59%;
+  width: 59%;;
+  padding-bottom: 20vh;
 }
 
 .tech-container p{
