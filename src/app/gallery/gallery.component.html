@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Fotos</title>
+  </head>
+  <body>
+    <!-- gallery.component.html -->
+    <div class="gallery">
+      <div class="gallery-item" *ngFor="let image of images; let i = index">
+        <img [src]="image.src" [alt]="image.alt" (click)="openLightbox(i)" />
+      </div>
+    </div>
+
+    <div class="lightbox" *ngIf="lightboxOpen" (click)="closeLightbox()">
+      <img
+        loading="lazy"
+        [src]="images[currentIndex].src"
+        (click)="$event.stopPropagation()"
+      />
+      <button (click)="moveInLightbox(-1); $event.stopPropagation()">
+        ◄
+      </button>
+      <button (click)="moveInLightbox(1); $event.stopPropagation()">
+        ►
+      </button>
+    </div>
+    <app-footer *ngIf="showFooter"></app-footer>
+  </body>
+</html>

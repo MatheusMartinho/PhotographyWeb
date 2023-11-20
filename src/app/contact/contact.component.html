@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="contact" class="container">
+      <div class="contact-details">
+        <section class="sec-1">
+          <p class="title">Contact Details</p>
+          <p>matmouramartinho@gmail.com</p>
+          <p>+236 866-5846</p>
+        </section>
+
+        <section class="sec-2">
+          <p class="title">My digital spaces</p>
+          <ul>
+            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/mattpalette/" target="_blank">Instagram</a></li>
+            <li><i class="fa-brands fa-github-alt"></i><a href="https://github.com/MatheusMartinho" target="_blank">Github</a></li>
+            <li><i class="fa-brands fa-linkedin"></i><a href="https://br.linkedin.com/in/matheus-moura-martinho-8630091b3"target="_blank">Linkedin</a></li>
+            <li><i class="fa-brands fa-spotify"></i><a href="https://open.spotify.com/user/matheusmouramartinho" target="_blank">Spotify</a></li>
+          </ul>
+        </section>
+
+        <section class="sec-3">
+          <p class="title">Location</p>
+          <p>São Paulo, Brazil</p>
+          <div>
+            Hora do servidor:
+          </div>
+        </section>
+      </div>
+
+      <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+        <p class="first-para">Tem uma ideia incrível?<br>Vamos torná-la realidade.</p>
+        <p class="second-para">
+          Estou ativamente explorando oportunidades em funções de freelancer ou estágios, especialmente em ambientes de startups dinâmicas e inovadoras.
+        </p>
+        <label for=""></label>
+        <input type="text" formControlName="to_name" placeholder="Your Name" />
+        <label for=""></label>
+        <input
+          type="email"
+          formControlName="from_name"
+          placeholder="Your Email"
+        />
+        <label for=""></label>
+        <textarea formControlName="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </body>
+</html>

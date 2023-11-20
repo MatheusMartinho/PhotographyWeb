@@ -1,0 +1,196 @@
+/* Apply a global font and remove default margins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffff2;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+/* Style the form */
+form {
+  background: #fffff2;
+  padding: 2em;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start ;
+}
+
+/* Style the form fields */
+input[type=text],
+input[type=email],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+form input:focus, form textarea:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Style the Submit button */
+input[type=submit] {
+  background: #0A0A08;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Change Submit button color on hover */
+input[type=submit]:hover {
+  background: #333;
+}
+
+/* Adjust label and input alignment */
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+/* Adjust textarea height */
+textarea {
+  height: 120px; /* Adjust height as per your preference */
+}
+
+/* Ensure that labels and inputs have matching font size */
+form label,
+form input,
+form textarea {
+  font-size: 0.9em;
+  background-color: #fffff2;
+  border: none;
+}
+
+form input,form textarea {
+  border-bottom: 1px solid black;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -40px;
+}
+
+.first-para{
+  font-size: 2em;
+  font-weight: bold;
+}
+.second-para{
+  color: #999999
+}
+
+form p{
+  margin-bottom: 0.1em;
+  position: relative;
+  top: -50px;
+}
+
+.contact-details{
+  margin-right: 2em;
+  padding: 2em;
+  border-radius: 20px;
+  color: black; /* Cor do texto */
+  font-size: 1em;
+  width: 25%;
+  display: flex;
+  justify-content:top;
+  flex-direction:column;
+  position: relative;
+  top: -30px;
+}
+
+.contact-details .title{
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.contact-details .sec-2 li{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-details .sec-2 ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.contact-details .sec-2 li a{
+  text-decoration: none;
+  color: black;
+}
+.contact-details .sec-2 i{
+  margin-right: 10px;
+  padding: 0.5em;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s; /* Optional: changes color on hover */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this to control the vertical position of the underline */
+  height: 2px; /* Thickness of the underline */
+  width: 100%;
+  background-color: black; /* Color of the underline */
+  transform: scaleX(0); /* Start with no width */
+  transform-origin: left; /* Expand from the left */
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+a:hover::after {
+  transform: scaleX(1); /* Full width on hover */
+}
+
+a:hover {
+  color: blue; /* Optional: changes link color on hover */
+}
+
+
+button{
+  background-color: rgb(251, 2, 128);
+  padding: 1em;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: transform 0.3s ease-in-out;
+  font-size: 0.8em; /* Text size */
+  position: relative;
+  top: -40px;
+}
+
+button:hover{
+  transform: scale(1.1); /* Increase the size by 10% */
+}

@@ -1,0 +1,147 @@
+/* programming.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  background-color: #5C4033;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.programming-skills {
+  text-align: center;
+  border: 1px solid #5C4033;
+  height: 100vh;
+  background-color: #5C4033;
+}
+
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  transition: transform 0.3s;
+  background: rgba(255, 255, 255, 0.1); /* Fundo branco com transparência */
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque para Safari */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  width: 200px; /* Fixed width for all images */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* This will cover the area, cropping the image if necessary */
+  border-radius: 5px; /* Optional: for rounded corners */
+  transition: transform 0.2s ease; /* Smooth transition for any hover effects */
+}
+
+.skill-info {
+  text-align: left;
+}
+
+.skill-level {
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-meter {
+  height: 10px;
+  background: #d9bda5;
+  width: 0; /* Initial width should be 0 */
+  border-radius: 5px;
+  transition: width 1s ease-out;
+}
+
+.skill-meter:hover{
+  background: #aa6f73;
+  box-shadow: 0 0 10px #aa6f73, 0 0 40px #aa6f73, 0 0 80px #aa6f73;
+  transition: 0.5s;
+}
+
+/* Add some media queries for responsiveness */
+@media (max-width: 768px) {
+  .skill-set {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* resume-section.component.css */
+.resume-section {
+  text-align: center;
+  margin: 20px;
+  height: 100vh;
+  background-color: #5C4033;
+}
+
+.download-button,
+.preview-button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover,
+.preview-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styles for preview */
+.modal {
+  display: block; /* Hidden by default; set to 'block' to show the modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
