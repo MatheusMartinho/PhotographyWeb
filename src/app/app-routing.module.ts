@@ -9,6 +9,8 @@ import { ProgrammingComponent } from './programming/programming.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   // { path: 'about', component: AboutComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'programming', component: ProgrammingComponent},

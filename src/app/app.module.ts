@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProgrammingComponent } from './programming/programming.component';
 import { SetupComponent } from './setup/setup.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { SetupComponent } from './setup/setup.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule // Include this in your imports array
+    ReactiveFormsModule, // Include this in your imports array
   ],
   providers: [],
   bootstrap: [AppComponent]

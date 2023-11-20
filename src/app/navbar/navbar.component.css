@@ -21,11 +21,9 @@
 .navbar-brand {
   font-size: 1.5rem; /* Tamanho da fonte maior */
   font-weight: bold; /* Fonte mais grossa */
-  color: #ecf0f1; /* Cor clara para o texto */
   text-decoration: none; /* Nenhuma sublinhado no texto */
-  transition: color 0.3s; /* Transição suave para o hover */
   color: black;
-
+  transition: 0.3s ease-in-out;
 }
 
 img {
@@ -39,7 +37,7 @@ img {
 }
 
 .navbar-brand:hover {
-  color: #3498db; /* Mudança de cor quando o mouse passa por cima */
+  color:rgb(251, 2, 128);
 }
 
 /* Estilo para a lista de navegação */
@@ -54,7 +52,7 @@ img {
 /* Estilo para cada item de navegação */
 .nav-item {
   margin: 0 0.5rem; /* Margem entre os itens */
-
+  cursor: pointer;
 }
 
 /* Estilo para os links de navegação */
@@ -63,7 +61,6 @@ img {
   text-decoration: none; /* Nenhuma sublinhado no texto */
   font-weight: 500; /* Um pouco mais de peso na fonte */
   transition: color 0.3s; /* Transição suave para o hover */
-
 }
 
 .nav-link:hover {
@@ -80,7 +77,6 @@ img {
   padding: 7px;
   border-radius: 4px;
   background-color: rgb(251, 2, 128);
-  background-image: linear-gradient(326deg, #a4508b 0%, rgb(254, 0, 242) 74%);
   width: 121px;
   height: 42px;
   color: #FFF;

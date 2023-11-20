@@ -15,6 +15,7 @@
 
     <div class="lightbox" *ngIf="lightboxOpen" (click)="closeLightbox()">
       <img
+        loading="lazy"
         [src]="images[currentIndex].src"
         (click)="$event.stopPropagation()"
       />

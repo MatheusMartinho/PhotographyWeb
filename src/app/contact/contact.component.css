@@ -6,17 +6,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5C4033;
+  background-color: #fffff2;
 }
-
+.container{
+  display:flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
 /* Style the form */
 form {
-  background: #ffffff;
+  background: #fffff2;
   padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start ;
 }
 
 /* Style the form fields */
@@ -27,8 +32,10 @@ textarea {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+form input:focus, form textarea:focus {
+  outline: none; /* Removes the default focus outline */
 }
 
 /* Style the form labels */
@@ -72,21 +79,118 @@ form label,
 form input,
 form textarea {
   font-size: 0.9em;
+  background-color: #fffff2;
+  border: none;
 }
 
-.container-text{
-  border: 1px solid red;
-  margin-right: 5em;
-  padding: 5.5em;
+form input,form textarea {
+  border-bottom: 1px solid black;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -40px;
+}
+
+.first-para{
+  font-size: 2em;
+  font-weight: bold;
+}
+.second-para{
+  color: #999999
+}
+
+form p{
+  margin-bottom: 0.1em;
+  position: relative;
+  top: -50px;
+}
+
+.contact-details{
+  margin-right: 2em;
+  padding: 2em;
   border-radius: 20px;
   color: black; /* Cor do texto */
-  background: rgba(255, 255, 255, 0.1); /* Fundo branco com transparência */
-  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-  -webkit-backdrop-filter: blur(10px); /* Efeito de desfoque para Safari */
-  border-radius: 10px; /* Bordas arredondadas */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-size: 1em;
+  width: 25%;
+  display: flex;
+  justify-content:top;
+  flex-direction:column;
+  position: relative;
+  top: -30px;
+}
+
+.contact-details .title{
+  padding-bottom: 0.5em;
   font-size: 1.2em;
+  font-weight: bold;
 }
 
 
+.contact-details .sec-2 li{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-details .sec-2 ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.contact-details .sec-2 li a{
+  text-decoration: none;
+  color: black;
+}
+.contact-details .sec-2 i{
+  margin-right: 10px;
+  padding: 0.5em;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s; /* Optional: changes color on hover */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust this to control the vertical position of the underline */
+  height: 2px; /* Thickness of the underline */
+  width: 100%;
+  background-color: black; /* Color of the underline */
+  transform: scaleX(0); /* Start with no width */
+  transform-origin: left; /* Expand from the left */
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+a:hover::after {
+  transform: scaleX(1); /* Full width on hover */
+}
+
+a:hover {
+  color: blue; /* Optional: changes link color on hover */
+}
+
+
+button{
+  background-color: rgb(251, 2, 128);
+  padding: 1em;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: transform 0.3s ease-in-out;
+  font-size: 0.8em; /* Text size */
+  position: relative;
+  top: -40px;
+}
+
+button:hover{
+  transform: scale(1.1); /* Increase the size by 10% */
+}

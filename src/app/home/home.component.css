@@ -130,6 +130,33 @@ body{
   padding-top: 0.5em;
 }
 
+.blob{
+  background-image: url(/assets/images/matheus-cara.png);
+  width: 380px;
+  height: 380px;
+  background-size: cover;
+  background-color:rgb(251, 2, 128);
+  background-position: center -290px;
+  margin:20px;
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253,0.4);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  border: 1px solid red;
+
+}
+.blob img{
+  position: relative;
+  top: -100px;
+}
+
+@keyframes animate{
+  0%, 100%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+  }
+}
 
 @media (max-width: 1440px) {
   .paragraph p {

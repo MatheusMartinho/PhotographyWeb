@@ -11,7 +11,6 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    // Initialize the form group
     this.contactForm = this.fb.group({
       to_name: ['', Validators.required],
       from_name: ['', [Validators.required, Validators.email]],
@@ -20,19 +19,24 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Initialize EmailJS with your user ID
-    emailjs.init('XH17M5nFqGgYu70kY'); // Replace 'your-user-id' with your actual EmailJS user ID
+    emailjs.init('XH17M5nFqGgYu70kY');
   }
 
   sendEmail() {
     if (this.contactForm.valid) {
-      // Here, we just call send() because the user ID has already been set in ngOnInit()
-      emailjs.send('service_y451f2y','template_ji0ar7q', this.contactForm.value)
+      emailjs.send('service_y451f2y', 'template_ji0ar7q', this.contactForm.value)
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
+          alert('Email sent successfully!');
+          this.resetForm(); // Reset the form after successful email sending
         }, (err) => {
           console.log('FAILED...', err);
+          alert('Failed to send email. Please try again later.');
         });
     }
+  }
+
+  resetForm() {
+    this.contactForm.reset();
   }
 }
