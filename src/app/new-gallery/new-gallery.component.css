@@ -1,0 +1,168 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fffff2;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "Poppins",sans-serif;
+}
+
+#text-foto{
+  margin-right:20px;
+  text-align: left;
+}
+
+.about-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  max-width: 60%;
+  height: 50%;
+  margin-top: auto;
+  margin-left: 440px;
+  margin-bottom: auto;
+  margin-right:0px;
+  padding: 20px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.divisoria{
+  display:flex;
+  flex-direction: row;
+}
+#descricaoCamera{
+  margin-left:10px;
+}
+#photoTitle{
+  position:relative;
+  top:6px;
+}
+.about-card {
+  background-color: #fffff2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.about-card h2{
+  margin-left:10px;
+}
+
+.about-image {
+  width: 300px;
+  height: 380px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.small-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  background-size: contain; /* Change this from 'cover' to 'contain' */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+
+.about-text h3 {
+  margin: 0;
+  color: #333;
+}
+
+.about-text p {
+  color: #666;
+  font-size: 14px;
+}
+
+.about-text ul{
+  list-style-type: none;
+  padding:0;
+}
+
+.about-text i{
+  padding-right: 10px;
+}
+
+
+.learn-more {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally, since it's a column layout */
+  justify-content: center; /* Center the items vertically */
+  width: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.learn-more:hover{
+  transform: scale(1.03);
+}
+
+.learn-more i{
+  margin-left: 255px;
+}
+.learn-more h2 {
+  color: #333;
+}
+
+.learn-more-button {
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Removes underline from the link */
+  color: white; /* Sets the text color */
+  background-color: rgb(251, 2, 128); /* Background color for the button */
+  border-radius: 10px; /* Rounded corners for the button */
+  display: inline-block; /* Allows applying padding and other box model properties */
+  transform: rotate(90deg); /* Rotates the button to be horizontal again */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  position: relative;
+  top:0px;
+  padding: 0.5em;
+  margin-left: 10px;
+}
+
+.container2 img{
+  width: 300px;
+  height: auto;
+  position:relative;
+  transform: rotate(90deg);
+  left: 700px;
+}
+
+.botao{
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Removes underline from the link */
+  color: white; /* Sets the text color */
+  background-color: rgb(251, 2, 128); /* Background color for the button */
+  border-radius: 10px; /* Rounded corners for the button */
+  display: inline-block; /* Allows applying padding and other box model properties */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  position: relative;
+  padding: 1em;
+  font-size: 2em;
+  z-index: 1;
+  top:-250px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s ease-in-out;
+}
+.botao i{
+  padding-left: 110px;
+}
+
+.botao:hover{
+  transform: scale(1.05);
+}

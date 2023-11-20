@@ -11,6 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProgrammingComponent } from './programming/programming.component';
 import { SetupComponent } from './setup/setup.component';
+import { NavGalleryComponent } from './nav-gallery/nav-gallery.component';
+import { NewGalleryComponent } from './new-gallery/new-gallery.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { SetupComponent } from './setup/setup.component';
     FooterComponent,
     GalleryComponent,
     ProgrammingComponent,
-    SetupComponent
+    SetupComponent,
+    NavGalleryComponent,
+    NewGalleryComponent
   ],
   imports: [
     BrowserModule,
