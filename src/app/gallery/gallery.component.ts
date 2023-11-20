@@ -9,7 +9,7 @@ export class GalleryComponent {
   showFooter = false;
 
   images = [
-    { src: 'assets/images/background-about.png', alt: 'Descrição da imagem 1' },
+    { src: 'assets/images/monkey.jpg', alt: 'Descrição da imagem 1' },
     { src: 'assets/images/dog.jpg', alt: 'Descrição da imagem 1' },
     { src: 'assets/images/body.jpg', alt: 'Descrição da imagem 2' },
     { src: 'assets/images/eagle.jpg', alt: 'Descrição da imagem 3' },
