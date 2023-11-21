@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <div class="paragraph">
+          <p class="bigger" [ngStyle]="{ 'white-space': 'pre-line' }">
+            {{ paragraph }} <i class="fa-solid fa-code"></i>
+          </p>
+          <p class="smaller" [ngStyle]="{ 'white-space': 'pre-line' }">
+            {{ description }} <i class="fa-solid fa-location-dot"></i>
+          </p>
 
-  <div class="container">
-    <div class="wrap">
-      <div class="paragraph">
-        <p class="bigger" [ngStyle]="{'white-space':'pre-line'}">
-          {{paragraph}} <i class="fa-solid fa-code"></i>
-        </p>
-        <p class="smaller" [ngStyle]="{'white-space':'pre-line'}">
-          {{ description }} <i class="fa-solid fa-location-dot"></i>
-        </p>
+          <div class="dev-links">
+            <a href="{{ linkedinUrl }}" target="_blank" class="swing-link"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="{{ githubUrl }}" target="_blank" class="swing-link"
+              ><i class="fa-brands fa-github-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="blob"></div>
+      </div>
 
-        <div class="dev-links">
-          <a href="{{ linkedinUrl }}" target="_blank" class="swing-link"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="{{ githubUrl }}" target="_blank" class="swing-link"><i class="fa-brands fa-github-alt"></i></a>
+      <div class="tech-container">
+        <p class="title">Tech Stack |</p>
+        <div class="skill-set" *ngFor="let icon of icons">
+          <i class="{{ icon.logo }}"></i>
         </div>
       </div>
-      <div data-aos="fade-up" class="blob">
-
-      </div>
-
     </div>
 
-    <div class="tech-container">
-      <p class="title">
-        Tech Stack  |
-      </p>
-      <div class="skill-set" *ngFor="let icon of icons">
-        <i class="{{ icon.logo }}"></i>
-      </div>
-  </div>
-  </div>
-
-  <app-about></app-about>
-  <app-new-gallery></app-new-gallery>
-  <app-contact></app-contact>
-</body>
+    <app-about></app-about>
+    <app-new-gallery></app-new-gallery>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  </body>
 </html>
