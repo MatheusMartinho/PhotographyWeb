@@ -34,3 +34,10 @@
   color: #6c757d;
   font-size: 0.9rem;
 }
+
+@media(max-width:1440px){
+  .footer span:nth-child(2){
+
+    padding-right: 140px;
+  }
+}
