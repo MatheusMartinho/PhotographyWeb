@@ -18,11 +18,14 @@ const routes: Routes = [
   { path: 'programming', component: ProgrammingComponent},
   { path: 'new-gallery', component: NewGalleryComponent},
   { path: 'nav-gallery', component: NavGalleryComponent},
-
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top'  // Corrigido: Adicionada dentro do objeto de configuração
+    })
+  ],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
