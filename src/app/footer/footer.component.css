@@ -23,6 +23,7 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
+  cursor: pointer;
 }
 .container i{
   margin-right: 10px;
