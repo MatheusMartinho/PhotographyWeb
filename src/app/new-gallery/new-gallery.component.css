@@ -16,7 +16,7 @@
   display: flex;
   align-items: start;
   justify-content: space-around;
-  /*max-width: 60%; */
+  width: 60%;
   height: 50%;
   margin-top: auto;
   margin-left: 440px;

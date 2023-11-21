@@ -197,3 +197,9 @@ button{
 button:hover{
   transform: scale(1.1); /* Increase the size by 10% */
 }
+
+@media(max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+} /* Adicionando o fechamento do bloco da media query */
