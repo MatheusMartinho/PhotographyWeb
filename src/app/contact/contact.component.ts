@@ -1,6 +1,7 @@
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import emailjs from 'emailjs-com';
 import { Component, OnInit } from '@angular/core';
+import { Observable, interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  currentTime: string = new Date().toLocaleTimeString();
+  private clockSubscription!: Subscription;
   contactForm: FormGroup;
-
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
       to_name: ['', Validators.required],
@@ -20,6 +22,15 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     emailjs.init('XH17M5nFqGgYu70kY');
+    this.clockSubscription = interval(1000)
+      .subscribe(() => {
+        this.currentTime = new Date().toLocaleTimeString();
+      });
+  }
+  ngOnDestroy() {
+    if (this.clockSubscription) {
+      this.clockSubscription.unsubscribe();
+    }
   }
 
   sendEmail() {
