@@ -161,11 +161,13 @@ body{
 @media (max-width: 1440px) {
   .paragraph p {
     font-size: 4vw;
+
   }
 
   img {
     padding-top: 3vw;
     padding-right: 3vw;
+
   }
 
   .paragraph {
@@ -180,15 +182,17 @@ body{
   .container {
     margin-left: auto; /* Centraliza o container */
     padding-top: 10vh;
+
   }
 
   .wrap {
-    flex-direction: column; /* Organiza os elementos em coluna */
+    flex-direction: row;/* Organiza os elementos em coluna */
   }
 
   .circle-container {
     width: 400px; /* Reduz o tamanho */
     height: 400px; /* Mantém a proporção */
+
   }
 
   .conatiner-2 {
@@ -211,8 +215,6 @@ body{
   }
 
   .tech-container {
-    width: 70%; /* Aumenta a largura */
+    width: 61%; /* Aumenta a largura */
   }
-
-  /* Adicione mais ajustes conforme necessário */
 }

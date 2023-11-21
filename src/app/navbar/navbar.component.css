@@ -129,4 +129,13 @@ img {
   }
 }
 
-/* Você pode adicionar mais media queries para outros tamanhos de tela, se necessário */
+@media (max-width: 1440px) {
+  .container{
+    display:flex;
+    width: 60%;
+  }
+  .navbar-nav{
+    position:relative;
+    left:74px;
+  }
+}

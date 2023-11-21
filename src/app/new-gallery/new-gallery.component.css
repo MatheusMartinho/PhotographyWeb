@@ -16,7 +16,7 @@
   display: flex;
   align-items: start;
   justify-content: space-around;
-  max-width: 60%;
+  /*max-width: 60%; */
   height: 50%;
   margin-top: auto;
   margin-left: 440px;
@@ -165,4 +165,19 @@
 
 .botao:hover{
   transform: scale(1.05);
+}
+
+@media (max-width:1440px){
+  .about-container{
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+  }
+  .about-content{
+    width:80%;
+    margin-left: 100px;
+  }
+  .about-card{
+    width:100%;
+  }
 }
