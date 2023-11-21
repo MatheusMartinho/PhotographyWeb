@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProgrammingComponent } from './programming/programming.component';
 import { NewGalleryComponent } from './new-gallery/new-gallery.component';
+import { NavGalleryComponent } from './nav-gallery/nav-gallery.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'programming', component: ProgrammingComponent},
   { path: 'new-gallery', component: NewGalleryComponent},
+  { path: 'nav-gallery', component: NavGalleryComponent},
+
 ];
 
 @NgModule({

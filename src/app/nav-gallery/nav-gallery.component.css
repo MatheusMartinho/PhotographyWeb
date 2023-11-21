@@ -1,0 +1,141 @@
+.navbar {
+  padding: 0.5rem 1rem; /* Almofada interna */
+  align-items: center; /* Centraliza os itens verticalmente */
+  height: 5em;
+  background-color: 	#fffff2;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding-bottom:15px;
+}
+
+.container{
+  display: flex; /* Flexbox para alinhamento */
+  justify-content: space-between; /* Espaçamento entre a marca e os itens de navegação */
+  width: 50%;
+  margin: auto;
+}
+
+/* Estilo para o nome da marca/empresa */
+.navbar-brand {
+  font-size: 1.5rem; /* Tamanho da fonte maior */
+  font-weight: bold; /* Fonte mais grossa */
+  text-decoration: none; /* Nenhuma sublinhado no texto */
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+img {
+  max-width: 300px; /* Ajusta a largura máxima do logo */
+  max-height: 80px; /* Ajusta a altura máxima do logo */
+  position: absolute; /* Posicionamento absoluto em relação ao seu contêiner pai */
+  top: 10px; /* Espaçamento do topo do contêiner */
+  left: 10px; /* Espaçamento da esquerda do contêiner */
+  padding-left: 10em;
+  padding-top: 14px;
+}
+
+.navbar-brand:hover {
+  color:rgb(251, 2, 128);
+}
+
+/* Estilo para a lista de navegação */
+.navbar-nav {
+  list-style: none; /* Remove estilos de lista */
+  display: flex; /* Flexbox para alinhamento horizontal */
+  padding-right: 10em;
+  margin-top: 20px;
+  padding-right:0px;
+}
+
+/* Estilo para cada item de navegação */
+.nav-item {
+  margin: 0 0.5rem; /* Margem entre os itens */
+  cursor: pointer;
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+  padding: 7px;
+  border-radius: 4px;
+  background-color: rgb(251, 2, 128);
+  width: 121px;
+  height: 42px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: black; /* Mudança de cor quando o mouse passa por cima */
+}
+
+/* Estilo para o link ativo */
+.active {
+  color: #fff; /* Destaca o link ativo com uma cor diferente */
+  border-bottom: 2px solid #fff; /* Sublinha o link ativo para melhor destaque */
+}
+
+#btn-contacto{
+  padding: 7px;
+  border-radius: 4px;
+  background-color: rgb(251, 2, 128);
+  width: 121px;
+  height: 42px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+}
+#btn-contacto:hover{
+  color: black;
+}
+
+
+@media screen and (max-width: 1440px) {
+  /* Estilos para telas menores ou iguais a 1440px de largura */
+
+  .navbar {
+    /* Ajuste o padding, tamanho da fonte, etc., conforme necessário */
+    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+  }
+
+  .container {
+    /* Ajuste a largura e o espaçamento conforme necessário */
+    width: 80%;
+    margin: auto;
+  }
+
+  img {
+    /* Ajuste o tamanho e o posicionamento do logo */
+    max-width: 200px;
+    max-height: 60px;
+    padding-left: 5em;
+  }
+
+  .navbar-nav {
+    /* Ajuste o espaçamento e o alinhamento dos itens de navegação */
+    padding-right: 5em;
+  }
+
+  .nav-item {
+    margin: 0 0.3rem;
+  }
+
+  #btn-contacto {
+    /* Ajuste o tamanho e o estilo do botão */
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+/* Você pode adicionar mais media queries para outros tamanhos de tela, se necessário */

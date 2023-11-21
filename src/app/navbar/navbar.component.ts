@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -6,11 +6,17 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
-  currentRoute: string = '';
+export class NavbarComponent implements OnInit {
+  public showNavbar = true;
 
-  constructor(private router: Router) {
-    
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.showNavbar = !event.url.includes('gallery');
+      }
+    });
   }
 
   scrollToSection(sectionId: string): void {
