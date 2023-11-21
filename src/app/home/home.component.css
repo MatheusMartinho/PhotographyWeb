@@ -182,13 +182,19 @@ body{
   .container {
     margin-left: auto; /* Centraliza o container */
     padding-top: 10vh;
-
   }
 
   .wrap {
     flex-direction: row;/* Organiza os elementos em coluna */
   }
+  .dev-links{
 
+    display:flex;
+    justify-content: flex-start;
+  }
+  .dev-links a:nth-child(1){
+    margin-right: 5px;
+  }
   .circle-container {
     width: 400px; /* Reduz o tamanho */
     height: 400px; /* Mantém a proporção */
