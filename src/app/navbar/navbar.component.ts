@@ -25,4 +25,9 @@ export class NavbarComponent implements OnInit {
       sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  public showMenu = false;
+
+  toggleMenu(): void {
+    this.showMenu = !this.showMenu;
+  }
 }

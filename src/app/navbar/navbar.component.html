@@ -3,7 +3,16 @@
     <a routerLink="/" class="navbar-brand">
       <p>Matheus.dev</p>
     </a>
-    <ul class="navbar-nav">
+    <div class="nav-burguer">
+      <button class="burger-menu" (click)="toggleMenu()">☰</button>
+        <ul [class.active]="showMenu">
+            <li><a (click)="scrollToSection('home')">Home</a></li>
+            <li><a (click)="scrollToSection('about')">Sobre</a></li>
+            <li><a (click)="scrollToSection('new-gallery')">Gallery</a></li>
+            <li><a (click)="scrollToSection('contact')">Contato</a></li>
+        </ul>
+    </div>
+    <ul class="navbar-nav" [class.show]="showMenu">
       <li class="nav-item">
         <a class="nav-link">Home</a>
       </li>
@@ -19,3 +28,4 @@
     </ul>
   </div>
 </nav>
+

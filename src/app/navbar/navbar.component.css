@@ -87,6 +87,9 @@ img {
 #btn-contacto:hover{
   color: black;
 }
+.burger-menu {
+  display: none;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -127,6 +130,16 @@ img {
     height: 35px;
     font-size: 16px;
   }
+  .burger-menu {
+    display: none;
+}
+}
+.nav-burguer ul {
+  display: none;
+}
+
+.navbar ul.active {
+  display: block; /* ou 'flex', dependendo do seu layout */
 }
 
 @media (max-width: 1440px) {
@@ -138,4 +151,56 @@ img {
     position:relative;
     left:74px;
   }
+}
+@media (max-width: 390px) {
+  .navbar-nav{
+    display:none;
+  }
+  .navbar-brand{
+
+    position: relative;
+    left:-70px;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 10px;
+    width:50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(251, 2, 128);
+    color:black;
+    border-radius: 15px;
+}
+
+
+.nav-burguer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border-bottom: 1px solid black;
+}
+
+.nav-burguer ul.active {
+  display: block;
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  left:-220px;
+  margin-top: 25px;
+
+}
+.nav-burguer ul.active li{
+  margin:10px;
+  padding:5px;
+
+}
+.nav-burguer ul.active li a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
 }
