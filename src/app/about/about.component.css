@@ -99,7 +99,6 @@ img {
 
 @media(max-width:390px){
   body{
-    border:1px solid yellow;
     margin:0;
     padding:0;
     display:flex;
@@ -107,11 +106,14 @@ img {
     font-size: 10px;
     margin-bottom:50px;
   }
+  .main-content{
+    position: relative;
+    top:-120px;
+  }
   .sobre-tema{
-    border:1px solid blue;
     height: 50%;
     position: relative;
-    left:-140px;
+    left:-190px;
     overflow: hidden;
     font-size: 1.5vw;
     width: 100%;
@@ -128,10 +130,9 @@ img {
     top: -75px;
   }
   img{
-    border:1px solid red;
     position:relative;
-    top:-160px;
-    right: -130px;
+    top:-260px;
+    right: -80px;
   }
 
   .img{
