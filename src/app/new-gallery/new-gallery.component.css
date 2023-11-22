@@ -25,6 +25,9 @@
   padding: 20px;
   border-radius: 15px;
   flex-direction: column;
+
+  position: relative;
+  left: -80px;
 }
 
 .divisoria{
@@ -194,6 +197,7 @@
     right:60px;
     width: 80%;
     top:-100px;
+    left:30px;
   }
   .about-card{
     display:flex;
@@ -212,7 +216,7 @@
   .botao{
     position: relative;
     top:-395px;
-    left: -100px;
+    left: -10px;
     font-size: 2.5vw;
     transform: rotate(90deg);
   }
@@ -229,7 +233,7 @@
     width: 150px;
     height: 150px;
     position:relative;
-    left: 10px;
+    left: 120px;
     top:-300px;
     transform: rotate(90deg);
   }

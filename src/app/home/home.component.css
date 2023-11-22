@@ -286,4 +286,8 @@ body{
     width: 15vw; /* Ajusta o tamanho dos ícones */
     height: 15vw; /* Mantém a proporção */
   }
+  .bigger{
+    position:relative;
+    left: -13px;
+  }
 }
