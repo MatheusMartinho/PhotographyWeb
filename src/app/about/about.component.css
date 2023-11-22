@@ -104,11 +104,12 @@ img {
     display:flex;
     flex-direction: column;
     font-size: 10px;
-    margin-bottom:50px;
+    margin-bottom:70px;
   }
   .main-content{
     position: relative;
-    top:-120px;
+    top:-200px;
+
   }
   .sobre-tema{
     height: 50%;
@@ -118,6 +119,7 @@ img {
     font-size: 1.5vw;
     width: 100%;
     margin:60px;
+
   }
   svg{
     font-size: 4vw;
@@ -131,7 +133,7 @@ img {
   }
   img{
     position:relative;
-    top:-260px;
+    top:-340px;
     right: -80px;
   }
 
