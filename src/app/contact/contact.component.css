@@ -203,3 +203,18 @@ button:hover{
     width: 80%;
   }
 } /* Adicionando o fechamento do bloco da media query */
+@media(max-width: 390px) {
+  .container {
+    display:flex;
+    flex-direction:column;
+    font-size: 4vw;
+    position: relative;
+    top:300px;
+  }
+  form{
+
+    position: relative;
+    right:39px;
+    width:330px;
+  }
+} /* Adicionando o fechamento do bloco da media query */

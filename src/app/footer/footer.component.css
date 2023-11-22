@@ -41,3 +41,19 @@
     padding-right: 140px;
   }
 }
+@media(max-width:390px){
+  .footer{
+    position:relative;
+    top:650px;
+    display: flex;
+    font-size: 4vw;
+  }
+  .second-footer-text{
+    position:relative;
+    right: -50px;
+  }
+  #top{
+    position:relative;
+    left: -10px;
+  }
+}
