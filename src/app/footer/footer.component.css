@@ -44,10 +44,10 @@
 @media(max-width:390px){
   .footer{
     position:relative;
-    top:500px;
+    top:530px;
     display: flex;
     font-size: 4vw;
-
+    padding-top:20px;
   }
   .second-footer-text{
     position:relative;
